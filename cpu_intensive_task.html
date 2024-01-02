@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU-Intensive Task Page</title>
+</head>
+<body>
+
+    <h1>CPU-Intensive Task Page</h1>
+
+    <button onclick="startCpuIntensiveTask()">Start CPU-Intensive Task</button>
+
+    <script>
+        function startCpuIntensiveTask() {
+            const startTime = Date.now();
+            while (Date.now() - startTime < 60000) {
+              onst iterations = 100000000;
+              let result = 0;
+              for (let i = 0; i < iterations; i++) {
+                  result += Math.sqrt(i);
+            }
+            alert('CPU-Intensive Task Completed!');
+        }
+    </script>
+
+</body>
+</html>
+FooterCyberArk
+CyberArk
